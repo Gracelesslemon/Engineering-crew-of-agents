@@ -46,16 +46,36 @@ class EngineeringTeam():
             max_retry_limit=3 
         )
 
+    @task
+    def design_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['design_task']
+        )
+
+    @task
+    def code_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['code_task'],
+        )
+
+    @task
+    def frontend_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['frontend_task'],
+        )
+
+    @task
+    def test_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['test_task'],
+        )   
+
     @crew
     def crew(self) -> Crew:
-        """Creates the EngineeringTeam crew"""
-        # To learn how to add knowledge sources to your crew, check out the documentation:
-        # https://docs.crewai.com/concepts/knowledge#what-is-knowledge
-
+        """Creates the research crew"""
         return Crew(
-            agents=self.agents, # Automatically created by the @agent decorator
-            tasks=self.tasks, # Automatically created by the @task decorator
+            agents=self.agents,
+            tasks=self.tasks,
             process=Process.sequential,
             verbose=True,
-            # process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
         )
