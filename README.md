@@ -35,8 +35,10 @@ Develops comprehensive unit tests to validate functionality and ensure code qual
 > No directions were given stating how the ui should look.
 ### Account Actions page:
 <img width="1918" height="907" alt="image" src="https://github.com/user-attachments/assets/af860cfe-0021-4500-b7d6-d6ef3f626214" />
+
 ### Trade page:
 <img width="1916" height="911" alt="image" src="https://github.com/user-attachments/assets/e7eea6d6-fa84-4745-9b73-6a7b36feb525" />
+
 ### Reports page:
 <img width="1916" height="913" alt="image" src="https://github.com/user-attachments/assets/094e7bbf-d4ac-434c-9960-a88c4d693a24" />
 
